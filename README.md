@@ -1,24 +1,11 @@
-# README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+##### 전체적인 과정
+Machenzie의 유튜브 강의를 들으며 레시피를 기록하는 페이지를 만들었다. 이미지를 추가로 삽입하는 기능 구현하는 것을 배우며 실습했다. 로그인 기능 구현에 따라 나브바를 세밀하게 바꾸어 주는 것도 실습하였다.
+<br>
+##### 새로 안 내용
+paperclip gem을 이용하여 게시물 내에 이미지 삽입하는 기능 구현을 배웠다.
+<br>
+##### 오류 내용
+- 처음에 레일즈 새로 열 때 recipe로 이름을 간단하게 지어주었다가 모델 생성 시 이름 중복이라고 계속 튕김 --> 강의대로 recipe_box로 새로 폴더 열어서 재작업 해줌
+- 사소한 라우팅 에러 --> f를 F로 입력 해놓거나 params를 빼먹는 오류 등를 발견하여 수정해서 해결 (눈알 빠지는 줄 알았다!)
+- paperclip gem 이용하는 데에 앞서 ImageMagick 설치를 빼먹음 --> `brew install imagemagick` 이라고 터미널에 입력하여 설치함
+- 탭 혹은 스페이스바로 인한 에러 --> 탭키로 통일 해 줌! (줄 맞추어주는 것이 중요하고, 탭과 스페이스바로 생기는 공백을 서로 다르게 인식함에 주의할 것을 깨달음)
